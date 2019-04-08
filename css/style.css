@@ -1,0 +1,182 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 50%; } }
+
+body {
+  font-family: "Nunito", sans-serif, sans-serif;
+  color: #777;
+  font-weight: 300;
+  line-height: 1.6;
+  background-color: #E5E5E5; }
+
+#wrapper {
+  max-width: 100vw; }
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: #fff; }
+  a:visited, a:active {
+    color: #fff; }
+
+.container {
+  position: relative;
+  height: 100vh;
+  margin: 0 auto; }
+
+.background-1 {
+  z-index: -9999;
+  clip-path: polygon(0 30vw, 30vw 0, 45vw 0, 0 45vw);
+  height: 200vh;
+  background-color: #CFCECE; }
+
+.background-2 {
+  position: absolute;
+  clip-path: polygon(0 0vw, 0vw 0, 30vw 0, 0 30vw);
+  height: 200vh;
+  width: 100%;
+  background-color: #FEFFB6;
+  top: 0; }
+
+.content {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120rem;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding-top: 10rem; }
+
+.active {
+  position: relative; }
+  .active::after {
+    position: absolute;
+    display: block;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 1rem;
+    height: 100%;
+    background-color: #DB4951;
+    border-radius: 3px; }
+
+.title {
+  padding: 3rem 0 2rem 3rem;
+  align-self: flex-start;
+  color: #111; }
+  .title__main {
+    font-size: 4.8rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #DB4951; }
+  .title__sub {
+    font-size: 2.4rem; }
+
+.header {
+  margin: 0 auto;
+  margin-bottom: 5rem; }
+  .header__title {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: normal;
+    color: #333; }
+
+.carousel {
+  margin-bottom: 10rem;
+  position: relative; }
+  .carousel__list {
+    display: flex;
+    justify-content: space-between; }
+  .carousel__item {
+    background-color: #fff;
+    min-height: 60rem;
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3);
+    transition: all .2s; }
+    .carousel__item--title {
+      padding: 3rem 0 2rem 3rem;
+      align-self: flex-start;
+      color: #111; }
+      .carousel__item--title-number {
+        font-size: 4.8rem;
+        margin-bottom: 1rem;
+        border-bottom: 2px solid #DB4951;
+        width: 5.6rem; }
+      .carousel__item--title-text {
+        font-size: 2.4rem; }
+    .carousel__item--img {
+      width: 27.6rem;
+      height: 27.6rem;
+      margin-bottom: 3rem; }
+    .carousel__item--text {
+      width: 90%;
+      font-size: 1.6rem;
+      text-align: center;
+      font-weight: 600; }
+    .carousel__item:hover {
+      cursor: pointer;
+      transform: translateY(-0.7rem);
+      box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.2); }
+  .carousel__arrow-right {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(75%, -50%);
+    font-size: 6rem;
+    background: #DAE1EC;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+
+.preview {
+  background-color: #fff;
+  padding: 6rem;
+  min-height: 20rem; }
+  .preview__title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+    padding: 0; }
+    .preview__title--sub {
+      font-size: 1.6rem;
+      width: 50%; }
+
+#frames {
+  min-width: 100%;
+  min-height: 100%; }
+
+iframe {
+  width: 100%;
+  min-height: 120rem; }
+
+#fifteen-game {
+  display: none; }
+
+#maze-game {
+  display: none; }
+
+#budgety-game {
+  display: none; }

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portfolio</title>
+	<link media="all" rel="stylesheet" href="css/style.css">
+
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
+
+</head>
+
+<body>
+	<div id="wrapper">
+		<div class="container">
+			<div class="background-1"></div>
+			<div class="background-2"></div>
+			<div class="content">
+				<div class="header">
+					<div class="header__title">
+						Мои работы
+					</div>
+				</div>
+
+				<div class="carousel">
+
+					<ul class="carousel__list">
+						<li class="carousel__item" id="fifteen-js">
+							<div class="carousel__item--title title">
+								<div class="carousel__item--title-number title__main">01</div>
+								<div class="carousel__item--title-text title__sub">Пятнашки</div>
+							</div>
+							<img src="./images/15.png" alt="" class="carousel__item--img">
+							<div class="carousel__item--text">
+								Перемещая костяшки по коробке, добиться упорядочивания их по номерам, желательно сделав
+								как можно меньше перемещений
+							</div>
+						</li>
+
+						<li class="carousel__item" id="maze-js">
+							<div class="carousel__item--title">
+								<div class="carousel__item--title-number">02</div>
+								<div class="carousel__item--title-text">Лабиринт</div>
+							</div>
+							<img src="./images/maze.png" alt="" class="carousel__item--img">
+							<div class="carousel__item--text">
+								Генерация лабиринта. С возможностью поиска выхода в текущей координатею
+							</div>
+						</li>
+
+						<li class="carousel__item" id="budgety-js">
+							<div class="carousel__item--title">
+								<div class="carousel__item--title-number">03</div>
+								<div class="carousel__item--title-text">Budgety</div>
+							</div>
+							<img src="./images/Budgety.png" alt="" class="carousel__item--img">
+							<div class="carousel__item--text">
+								Приложения для контроля бюджета. И анализа доходов и расходов.
+							</div>
+						</li>
+					</ul>
+					<div class="carousel__arrow-right">
+						<i class="fas fa-angle-right"></i>
+					</div>
+
+				</div>
+
+				<div class="preview">
+					<div class="preview__title title">
+						<div class="preview__title--main title__main">
+							Домашки
+						</div>
+						<div class="preview__title--sub title__sub">
+							Я уже много знаю и умею. Выбери любую из моих домашек и посмотри как она работает
+						</div>
+					</div>
+					<div id="frames">
+						<iframe src="projectsFrame/15js/index.html" id="fifteen-game" frameborder="0"></iframe>
+						<iframe src="projectsFrame/maze/index.html" id="maze-game" frameborder="0"></iframe>
+						<iframe src="projectsFrame/budgety/index.html" id="budgety-game" frameborder="0"></iframe>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+	<script src="js/app.js"></script>
+</body>
+
+</html>

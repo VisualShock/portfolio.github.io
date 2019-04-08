@@ -1,0 +1,16 @@
+.title{
+    padding: 3rem 0 2rem 3rem;
+    align-self: flex-start;
+    color: #111;
+    &__main{
+        font-size: 4.8rem;                
+        margin-bottom: 1rem;
+        border-bottom: 2px solid #DB4951;
+        
+    }
+    &__sub{
+        font-size: 2.4rem;
+    }
+}
+
+

@@ -1,0 +1,20 @@
+.preview{
+    background-color: #fff;
+    padding: 6rem;
+    min-height: 20rem;
+    &__title{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        justify-items: center;
+        padding: 0;
+            &--main{
+                
+            }
+            &--sub{
+                font-size: 1.6rem;
+                width: 50%;
+            }
+    }
+}

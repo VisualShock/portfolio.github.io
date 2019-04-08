@@ -1,0 +1,136 @@
+// COLOR VARIABLES
+$color-primary-grey: #6ab3ac;
+$color-primary: #76c7c0;
+$color-primary-dark: #62b9b0;
+$color-primary-dark-bit: #62a29e;
+$color-primary-darker: #3e6966;
+
+
+$color-white: #fff;
+$color-white-dark: #fff;
+
+
+$color-secondary: #101d2c;
+
+$color-grey-light-1: #98a3a3;
+$color-grey: #7f8c8c;
+$color-grey-light: #ececec;
+
+$color-grey-lighter: #f3f3f3;
+
+$color-red: #e2534b;
+$color-red-light: #e8645a;
+
+//////////////SIZE
+$screen-size: 117rem;
+
+// FONT VARIABLES
+$font-primary: 'Nunito', sans-serif;
+$font-display: 'Josefin Sans', sans-serif;
+
+///////////////////MEDIA breakpoints
+$bp-largest: 75em; // 1200px/16=75
+$bp-large: 62.5em; // 1000px
+$bp-medium: 50em; // 800px
+$bp-small: 37.5em; // 600px
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+    
+    @media only screen and (max-width: $bp-largest){
+        font-size: 50%;
+    }
+}
+
+body{
+    font-family: $font-primary, sans-serif;
+    color: #777;
+    font-weight: 300;
+    line-height: 1.6;
+    background-color: #E5E5E5;
+    
+}
+#wrapper{
+    max-width: 100vw;       
+}
+
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    
+    &:visited,
+    &:active{
+        color: #fff;
+    }
+}
+.container{
+    position: relative;
+    height: 100vh;
+    
+    margin: 0 auto;
+    
+}
+
+
+.background{
+    &-1{
+        z-index: -9999;
+        clip-path: polygon(0 30vw, 30vw 0, 45vw 0, 0 45vw); 
+        height: 200vh;
+        
+        background-color: #CFCECE;
+    }
+    &-2{
+        position: absolute;
+        clip-path: polygon(0 0vw, 0vw 0, 30vw 0, 0 30vw); 
+        height: 200vh;
+        width: 100%;
+        background-color: #FEFFB6;
+        top: 0;
+        
+        
+    }
+}
+
+.content{
+    
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120rem;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding-top: 10rem;
+}
+
+.active{
+    position: relative;
+    &::after{
+        position: absolute;
+        display: block;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 1rem;
+        height: 100%;
+        background-color: #DB4951;
+        border-radius: 3px;
+    }
+    // border-left: 1rem solid #DB4951;
+}
